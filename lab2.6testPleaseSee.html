@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rightNumber = +prompt('ใส่เลขที่คุณอยากจะทาย');
+        let guessNumber = +prompt('ใส่เลขที่คุณทาย')
+        while (guessNumber != rightNumber) {     
+           if (guessNumber > rightNumber){
+               guessNumber = prompt("มากไปใส่ใหม่");
+               continue;
+           }
+           else if (guessNumber <rightNumber){
+               guessNumber = ('น้อยไปใส่ใหม่');
+               continue;
+           }
+         else if(guessNumber ==rightNumber){
+             alert('ยินดีด้วยเดาถูกแล้วนะ')
+             break;
+         }
+           
+          
+        }
+       //////////////  ไม่อยากใส่เงื่อนไข ของ while เป็น <100 ใส่เป็นอย่างอื่นได้ไหม
+</body>
+</html>

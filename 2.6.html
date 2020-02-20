@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rightNumber = +prompt('กำหนดตัวเลขปริศนา1-100')
+        let guessNumber = +prompt('ทายตัวเลข1-100')
+            
+        while(guessNumber < 100){ 
+            if (guessNumber < rightNumber){
+                guessNumber = +prompt('น้อยไปทายใหม่');
+                continue;
+            }
+
+            else if (guessNumber > rightNumber){
+                guessNumber = +prompt('มากไปทายใหม่');
+                continue;
+            }
+
+            else if (isNaN(guessNumber)){           
+               guessNumber = +prompt('คุณไม่ได้ใส่ตัวเลขใส่ใหม่');
+               continue;
+               }
+                    // อยากให้เด้งเวลาไม่ได้ใส่ตัวเลข ว่าใส่ผิด ทำยังไง  กด cancle ได้ทำยังไง
+
+            else if (guessNumber == rightNumber){
+                alert('เดาแม่นจบลูปมรณะ');
+                break;
+            }
+
+            }
+        
+
+
+ 
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let whocome = prompt('โปรดแนะนำตัว');
+       
+
+
+           if(whocome == "admin"){
+            let askpassword = prompt('โปรดกรอกpassword')
+              if (askpassword == 'codecamp') {
+               alert('ยินดีต้อนรับ');}
+               else{
+               alert('wrong pass');
+           }
+           }
+
+           else if(!whocome || whocome == ""){
+               alert('ยกเลิก');
+           }
+        //    else if(whocome == " "){
+        //        alert('ยกเลิก');
+        //    }
+
+           else{
+               alert('ผมไม่รู้จักคุณ');
+           }
+
+
+
+    </script>
+</body>
+</html>
