@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        function ask(question, yes, no) {
+        function ask(yes,no ,question ) {
   if (confirm(question)) yes()
   else no();
 }
@@ -18,7 +18,7 @@ function showCancel() {
   alert( "You canceled the execution." );
 }
 // usage: functions showOk, showCancel are passed as arguments to ask
-ask("Do you agree?", showOk, showCancel);
+ask(showOk,showCancel , "Do you agree?");
     </script>
 </body>
 </html>

@@ -7,13 +7,33 @@
 </head>
 <body>
      <script>
-let number = +prompt("ใส่ตัวเลขของคุณมา");
-let highNUmber = "";
-let number1 = number;
-  while (number1 != null){
-   number = +prompt("ใส่ตัวเลขของคุณมา")
-  if (number)
-  }
+let number1 = "";
+let highNUmber = 0;
+/*
+while (true){
+     number1 = +prompt("ใส่เลขคุณมา");
+     if(number1 > highNUmber){
+          highNUmber = number1;
+     }
+     else if(number1 == null){
+          alert(highNUmber);
+          break;
+     }
+
+}
+  */
+ while (number1 != null){
+     number1 = +prompt("ใส่เลขคุณมา");
+     if (number1 >0) number1*1;
+     if(number1 > highNUmber){
+          highNUmber = number1;
+     }
+     else {
+          alert(highNUmber);
+          break;
+     }
+ }
+  
 
      </script>
 </body>

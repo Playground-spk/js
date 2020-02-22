@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1;
+        
+        function ask(question, self,  low){
+             number1 = +prompt(question);
+            if (number1 > 20) self();
+            else low();
+        }
+            function high20(){
+                
+                for (i = number1; number1 > 20; number1--){
+                    alert(number1);
+                    
+                }
+            }
+
+            function cancle(){
+                alert(number1);
+            }
+
+         
+        
+
+        ask("ใส่ตัวเลข",  high20, cancle,);
+    </script>
+</body>
+</html>
