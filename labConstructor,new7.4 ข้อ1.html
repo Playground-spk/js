@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator(){
+            this.read = function(){
+            this.key1 = +prompt("ค่าที่1")
+            this.key2 = +prompt("ค่าที่2")
+            return this;
+            }
+            this.sum = function(){
+                this.answer = this.key1 + this.key2;
+                return this;
+            }
+            this.mul = function(){
+               this.answer = this.key1 * this.key2;
+               return this;
+            
+            }
+        }
+
+        let kk = new Calculator();
+
+        kk.read().sum().mul();
+        console.log(kk.mul())
+    </script>
+</body>
+</html>

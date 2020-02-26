@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Player(names, heights, years ){
+            this.name = names,
+            this.height = heights,
+            this.year = years,
+            this.call = function(){
+                alert("ทั้งหมดนี้"+ this.name + this.height + this.year);
+            }
+            
+        }
+
+        one = new Player("tae", 168, 20);
+
+    one.call();
+
+
+    </script>
+</body>
+</html>

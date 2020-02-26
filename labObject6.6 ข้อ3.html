@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let calculator = {
+            read() {
+                this.name1 = +prompt("ใส่ค่า1")
+                this.name2 = +prompt("ใส่ค่า2")
+            },
+
+            sum() {
+                return this.name1 + this.name2;
+            },
+            mul() {
+                return this.name1 * this.name2;
+            }
+        }
+
+        //   calculator.read = read;
+        //   calculator.sum = sum;
+        //   calculator.mul = mul;
+        calculator.read();
+        // console.log(calculator.name1);
+        alert(calculator.sum());
+        alert(calculator.mul());
+    </script>
+</body>
+
+</html>
