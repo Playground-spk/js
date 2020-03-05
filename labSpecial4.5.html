@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        function draw(n){
-            let num = n;
-            var row = "";
-            for(let i = 1; n <= i; n--){
-             for(let e = 1; e <= num; e++){
-                 row += n; 
-             }
-            console.log(row);
-            row = "";
-            }
-        }
+        function draw(n) {
+            let count = n;
+            let row = "";
+            for (let i = 1; n >= i; n--) {
+                for (let e = 1; e < count; e++) {
 
-        draw(4)
+                    row += n;
+                }
+                console.log(row);
+                row = "";
+            }
+
+        };
+
+        draw(4);
     </script>
 </body>
+
 </html>
