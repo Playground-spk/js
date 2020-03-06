@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function draw(n){
+    let row = "";
+    let col = n;
+    let g = 0;
+    for (let i = 1; i<= n; i++){
+             for (let d = i; d > 0; d--,g++){
+                 row += "*";
+             }
+             
+             for (let f = g; g < n; g++ ){
+                 row += "-";
+             }
+             g = 0;
+             
+
+        console.log(row);
+        row ="";
+        }
+    }  
+    draw(4);
+</script>
+</body>
+</html>
