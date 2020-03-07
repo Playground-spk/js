@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let inf = n;
+            let ina = 1;
+            let row = "";
+            let inf2 = 1;
+            let ina2 = n;
+            for (let round = 0; round < 2; round++){
+                for(let table = 0; table < n; table++){
+
+                if(ina <= n){
+                    for(let i = 0; i < inf-ina; i++){
+                        row += "-";
+                    }
+                    for(let e = 0; e < ina; e++){
+                        row += "*";
+                    }
+                ina++
+                } else if(ina > n){
+                    for(let i2 = 0; i2 < inf2; i2++){
+                        row += "-";
+                    }
+                    for(let e2 = 0; e2 < ina2 - inf2; e2++){
+                        row += "*";
+                    }
+                    inf2++
+                }
+                
+                console.log(row);
+                row = "";
+                
+
+                }
+            }
+        }
+        draw(4)
+    </script>
+</body>
+</html>

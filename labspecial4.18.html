@@ -8,23 +8,23 @@
 <body>
     <script>
         function draw(n){
+            let inf = n;
+            let ina =0;
             let row = "";
-            let ina;
-            let inf = 1;
-            for (let round = 0; round < n; round++){
-                ina = n;
-                for(;ina-inf > 0; ina--){
+            for(let i = 0; i < n; i++){
+                for(let e = 0; e < ina; e++){
                     row += "-";
-                }
-                for(let i = 0; i < inf; i++){
+                };
+                for(let t = 0; t < n-ina; t++){
                     row += "*";
                 }
+                ina++
                 console.log(row);
                 row = "";
-                inf++
+
             }
         }
-        draw(6);
+        draw(4);
     </script>
 </body>
 </html>
