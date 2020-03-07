@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let row = "";
+            let ina;
+            let inf = 1;
+            for (let round = 0; round < n; round++){
+                ina = n;
+                for(;ina-inf > 0; ina--){
+                    row += "-";
+                }
+                for(let i = 0; i < inf; i++){
+                    row += "*";
+                }
+                console.log(row);
+                row = "";
+                inf++
+            }
+        }
+        draw(4);
+    </script>
+</body>
+</html>
