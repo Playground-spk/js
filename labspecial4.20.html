@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function draw(n) {
+            let row = "";
+            let infrist = n;
+            let inafter = 1;
+            let number = 1;
+            let infrist2 = 1;
+            let inafter2 = n;
+            for (let round = 0; round < 2; round++) {
+
+                    if (inafter <= n) {
+                for (let table = 0; table < n; table++) {
+                        for (let i = 0; i < infrist - inafter; i++) {
+                            row += "-";
+                        }
+                        for (let e =0; e < inafter; e++){
+                            row += number;
+                            number++
+                        }
+                        console.log(row);
+                        row = "";
+                        inafter++
+
+                    }
+                    } else if (inafter > n) {
+                        for(let table2 = 1; table2 < n; table2++ ){
+
+                        for(let i2 = 1; i2 <= infrist2; i2++ ){
+                            row += "-"
+                        }
+                        for(let e2 = 0; e2 < inafter2 - infrist2; e2++){
+                            row += number
+                            number++
+                        }
+                        infrist2++
+                        console.log(row);
+                    row = "";
+                        }
+                }
+                    
+
+
+
+
+            }
+        }
+        draw(4);
+    </script>
+</body>
+
+</html>
