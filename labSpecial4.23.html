@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let row = "";
+            let inL = n;
+            let inM = 1;
+            let form = 1;
+            let inR = n;
+            let inL2 = 1;
+            let inM2 = (2*n)-1;
+            let inR2 = 1;
+            for(table = 0; table < n; table ++){
+                for(let l = 0; l < inL-form; l++){
+                    row += "-";
+                }
+                for(let m = 0; m < inM; m++){
+                    row += "*";
+                }
+                for(let r = 0; r < inR-form; r++){
+                    row += "-";
+                }
+                console.log(row);
+                row = "";
+                inM += 2;
+                form ++
+            }
+
+            for(table2 = 1; table2 < n; table2++){
+                for (let l2 = 0; l2  < inL2; l2++){
+                    row += "-";
+                }
+                for (let m2 = 0; m2 < inM2 -(inL2+inR2); m2++){
+                    row += "*";
+                }
+                for (let r2 = 0; r2 < inR2; r2++){
+                    row += "-";
+                }
+                console.log(row);
+                row = "";
+                inL2 ++;
+                inR2++;
+
+            }
+
+        }
+        draw(4);
+    </script>
+</body>
+</html>
