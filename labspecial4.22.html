@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let inM = (n*2)-1;
+            let inL = 0;
+            let inR = 0;
+            let row = "";
+            for(let table = 0; table < n; table++){
+                for (let l =0; l < inL; l++){
+                    row += "-";
+                }
+                for (let m = 0; m < inM; m++){
+                    row += "*";
+                }
+                for (let r = 0; r < inR; r++){
+                    row += "-";
+                }
+                console.log(row);
+                row = "";
+                inL ++;
+                inR ++;
+                inM -= 2;
+            }
+        }
+        draw(4);
+
+
+    </script>
+</body>
+</html>
